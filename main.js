@@ -18,6 +18,12 @@ document.querySelector('#app').innerHTML = `
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
+    <h1>Hello ScalaJS and ThreeJS</h1>
+    <script>
+        window.THREE = await import("node_modules/three/build/three.module.min");
+        window.Stats = await import("node_modules/stats/index");
+    </script>
+    <script src="target/scala-3.4.1/scala-threejs-vite-template-opt/main.js"></script>
   </div>
 `
 
